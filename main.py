@@ -384,7 +384,6 @@ def home_page():
     """Display beautiful home page with logo and school name at the very top and about section in a dropdown"""
     st.set_page_config(page_title="School Fees Management", layout="wide", page_icon="🏫")
     
-    
     # Hide GitHub icon and other elements
     hide_streamlit_elements()
 
@@ -686,6 +685,9 @@ def home_page():
 
 def login_page():
     """Display login page with signup option and handle authentication"""
+      # Hide GitHub icon and other elements
+    hide_streamlit_elements()
+
     st.title("🔒 School Fees Management - Login / Sign Up")
     
     st.markdown("**New users, including admins, must sign up with their Gmail address to start a 1-month free trial.**") 
@@ -988,6 +990,9 @@ def set_student_fees():
 def main_app():
     """Main application after login"""
     st.set_page_config(page_title="School Fees Management", layout="wide")
+     # Hide GitHub icon and other elements
+    hide_streamlit_elements()
+    
     st.title("📚 School Fees Management System")
     
     # Display trial status in sidebar
